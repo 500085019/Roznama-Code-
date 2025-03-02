@@ -188,7 +188,11 @@ const App = () => {
   }, [formData]);
 
   return (
-<div className="d-flex flex-column justify-content-center align-items-center vh-100 vw-100 bg-light p-4">
+<div className="d-flex flex-column justify-content-center align-items-center  bg-light p-4"
+  style={{
+    height:"100vh",
+    width:"60vw"
+    >
   <div
     className="bg-white p-5 rounded shadow text-center w-100"
     style={{
