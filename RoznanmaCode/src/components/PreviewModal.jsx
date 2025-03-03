@@ -6,6 +6,8 @@ const PreviewModal = ({ isOpen, onRequestClose, previewKey }) => {
   
   console.log("pdfURL:", pdfURL);
   console.log("previewKey:", previewKey);
+  const fullURL = `${pdfURL} ${previewKey}`;
+
   console.log("Full  URL:", pdfURL + previewKey);
 
   return (
@@ -35,7 +37,7 @@ const PreviewModal = ({ isOpen, onRequestClose, previewKey }) => {
       <iframe
         width="100%"
         height="500px"
-        srcDoc={pdfURL+previewKey || "No key available"}
+        srcDoc={fullURL}
         title="Preview"
         style={{ border: "1px solid #ccc" }}
       ></iframe>
